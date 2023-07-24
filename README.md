@@ -1,7 +1,7 @@
 <img src="qoqo_Logo_vertical_color.png" alt="qoqo logo" width="300" />
 
 # qoqo-strawberry-fields
-A Xanadu StrawberryFields backend for the qoqo quantum computing toolkit by [HQS Quantum Simulations](https://quantumsimulations.de).
+Qoqo-strawberry-fields is a backend for the qoqo quantum computing toolkit that translates qoqo Circuits and Programs to the strawberry-fields toolkit from Xanadu.
 
 ## General Notes
 
