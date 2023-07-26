@@ -34,15 +34,6 @@ dev = [
     "mypy",
     "ruff",
 ]
-docs = [
-    "sphinx >= 2.1",
-    "nbsphinx",
-    "pygments",
-    "recommonmark",
-    "myst_parser",
-    "sphinx_rtd_theme",
-    "tomli"
-]
 
 [build-system]
 requires = ["setuptools", "setuptools-scm"]
@@ -50,6 +41,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
 version_scheme = "python-simplified-semver"
+write_to = "src/qoqo_strawberry_fields/__version__.py"
 # NOTE: in case the pyproject.toml is **not** located at the root folder of the repository,
 # the 'root' option should provide the **relative** path from the pyproject.tomlto the
 # root folder of the repository.
