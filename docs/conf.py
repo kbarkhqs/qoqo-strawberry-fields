@@ -19,9 +19,8 @@
 #
 
 # set __version__
-import tomli
-
-main_version = tomli.load(open("../pyproject.toml", "rb"))["project"]["version"]
+from qoqo_strawberry_fields.__version__ import version_tuple
+main_version = f"{version_tuple[0]}.{version_tuple[1]}"
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
