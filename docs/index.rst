@@ -1,6 +1,6 @@
 Welcome to qoqo-strawberry-fields's documentation!
 ======================================
-A Strawberry Fields backend for the qoqo quantum computing toolkit by [HQS Quantum Simulations](https://quantumsimulations.de).
+Qoqo-strawberry-fields is a backend for the qoqo quantum computing toolkit that translates qoqo Circuits and Programs to the strawberry-fields toolkit from Xanadu.
 
 
 .. toctree::
