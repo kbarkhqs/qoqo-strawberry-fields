@@ -22,6 +22,7 @@ list_of_operations = [
         operations.DefinitionFloat("ro", 2, True),
         operations.Squeezing(0, np.pi, np.pi),
         operations.PhaseShift(0, np.pi),
+        operations.PhaseDisplacement(0, np.pi, np.pi),
         operations.BeamSplitter(0, 1, np.pi, np.pi),
         operations.PhotonDetection(0, "ro", 0),
         operations.PhotonDetection(1, "ro", 1),

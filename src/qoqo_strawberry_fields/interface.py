@@ -46,7 +46,10 @@ def call_circuit(circuit: qoqo.Circuit, number_modes: int) -> sf.Program:
                 ops.Sgate(op.squeezing().float(), op.phase().float()) | q[op.mode()]
         elif op.hqslang() == "PhaseShift":
             with prog.context as q:
-                ops.Dgate(op.phase().float()) | q[op.mode()]
+                ops.Rgate(op.phase().float()) | q[op.mode()]
+        elif op.hqslang() == "PhaseDisplacement":
+            with prog.context as q:
+                ops.Dgate(op.displacement().float(), op.phase().float()) | q[op.mode()]
         elif op.hqslang() == "BeamSplitter":
             with prog.context as q:
                 ops.BSgate(op.theta().float(), op.phi().float()) | (q[op.mode_0()], q[op.mode_1()])
