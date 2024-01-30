@@ -41,8 +41,8 @@ def test_simulate_circuit(ops: List[Any]):
     backend = StrawberryFieldsBackend(number_modes=2, device="gaussian")
     result = backend.run_circuit(circuit)
     assert len(result) == 3
-    assert "ro" in result[0]
-    assert result[0]["ro"].shape == (10, 2)
+    assert "ro" in result[1]
+    assert result[1]["ro"].shape == (10, 2)
 
 
 @pytest.mark.parametrize("ops", list_of_operations)
@@ -61,8 +61,8 @@ def test_measurement_register_classicalregister(ops: List[Any]):
     except:
         assert False
 
-    assert len(output[0]["ro"][0]) == len(involved_qubits)
-    assert not output[1]
+    assert len(output[1]["ro"][0]) == len(involved_qubits)
+    assert not output[0]
     assert not output[2]
 
 
