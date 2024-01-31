@@ -18,8 +18,6 @@ import qoqo
 
 ALLOWED_OPERATIONS = [
     "DefinitionFloat",
-    "DefinitionBit",
-    "DefinitionComplex",
     "PragmaSetNumberOfMeasurements",
     "PragmaStartDecompositionBlock",
     "PragmaStopDecompositionBlock",

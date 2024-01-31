@@ -33,8 +33,6 @@ def _post_process_circuit_result(
               Dict[str, List[List[float]]],
               Dict[str, List[List[complex]]]: processed results
     """
-    bit_results = {}
-    measurements = results.samples
-    bit_field = measurements > 0
-    bit_results[metadata["readout_name"]] = bit_field
-    return (bit_results, {}, {})
+    float_results = {}
+    float_results[metadata["readout_name"]] = results.samples
+    return ({}, float_results, {})

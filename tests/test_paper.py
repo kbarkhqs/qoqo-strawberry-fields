@@ -73,7 +73,7 @@ def test_su_2018(squeezing: float, squeezing_angle: float):
     processed_results = _post_process_circuit_result(result_fock, {"readout_name": "ro"})
 
     for qoqo_res, strawb_res in zip(
-        convert_results(result[0]["ro"]), convert_results(processed_results[0]["ro"])
+        convert_results(result[1]["ro"]), convert_results(processed_results[1]["ro"])
     ):
         npt.assert_almost_equal(qoqo_res, strawb_res, decimal=3)
 

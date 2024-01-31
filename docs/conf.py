@@ -1,4 +1,5 @@
 """Configuration file for documentation."""
+
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
@@ -20,6 +21,7 @@
 
 # set __version__
 from qoqo_strawberry_fields.__version__ import version_tuple
+
 main_version = f"{version_tuple[0]}.{version_tuple[1]}"
 # -- General configuration ------------------------------------------------
 
