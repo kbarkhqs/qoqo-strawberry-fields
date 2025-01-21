@@ -103,8 +103,8 @@ class StrawberryFieldsBackend:
                     "cannot use the MeasureFock operation."
                 )
             device = sf.Engine(
-                self.device, backend_options={"cutoff_dim": 5}
-            )  # TODO: research what this value should be
+                self.device, backend_options={"cutoff_dim": 5}  # TODO: what should this value be?
+            )
         elif self.device in REMOTE_SIMULATORS_LIST:
             device = sf.RemoteEngine(self.device)
         else:
