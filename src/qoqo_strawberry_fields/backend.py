@@ -113,8 +113,8 @@ class StrawberryFieldsBackend:
             else:
                 raise ValueError(
                     "Device specified isn't allowed. You can allow it by calling the "
-                    + "`allow_use_actual_hardware` function, but please be aware that "
-                    + "this may incur significant monetary charges."
+                    "`allow_use_actual_hardware` function, but please be aware that "
+                    "this may incur significant monetary charges."
                 )
         return device
 
@@ -180,7 +180,9 @@ class StrawberryFieldsBackend:
             {"readout_name": readout},
         )
 
-    def run_circuit(self, circuit: Circuit) -> Tuple[
+    def run_circuit(
+        self, circuit: Circuit
+    ) -> Tuple[
         Dict[str, List[List[bool]]],
         Dict[str, List[List[float]]],
         Dict[str, List[List[complex]]],
@@ -204,7 +206,9 @@ class StrawberryFieldsBackend:
         (results, metadata) = self._run_circuit(circuit)
         return _post_process_circuit_result(results, metadata)
 
-    def run_measurement_registers(self, measurement: Any) -> Tuple[
+    def run_measurement_registers(
+        self, measurement: Any
+    ) -> Tuple[
         Dict[str, List[List[bool]]],
         Dict[str, List[List[float]]],
         Dict[str, List[List[complex]]],
