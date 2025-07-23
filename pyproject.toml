@@ -15,6 +15,7 @@ dependencies = [
     "strawberryfields",
     "tensorflow",
     "numpy",
+    "scipy>=1.10, <1.14"
 ]
 
 [project.optional-dependencies]
