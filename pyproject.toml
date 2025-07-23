@@ -11,7 +11,7 @@ requires-python = ">=3.9"
 dynamic = ["version"]
 dependencies = [
     "pydantic",
-    "qoqo>=1.17",
+    "qoqo>=1.20",
     "strawberryfields",
     "tensorflow",
     "numpy",
