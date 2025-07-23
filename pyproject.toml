@@ -11,11 +11,10 @@ requires-python = ">=3.9"
 dynamic = ["version"]
 dependencies = [
     "pydantic",
-    "qoqo>=1.17",
+    "qoqo>=1.20",
     "strawberryfields",
     "tensorflow",
     "numpy",
-    "scipy>=1.10, <1.14"
 ]
 
 [project.optional-dependencies]
