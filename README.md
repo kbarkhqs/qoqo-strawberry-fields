@@ -1,7 +1,7 @@
 <img src="qoqo_Logo_vertical_color.png" alt="qoqo logo" width="300" />
 
 # qoqo-strawberry-fields
-Qoqo-strawberry-fields is a backend for the qoqo quantum computing toolkit that translates qoqo Circuits and Programs to the strawberry-fields toolkit from Xanadu.
+Qoqo-strawberry-fields is a backend for the qoqo quantum computing toolkit that translates qoqo Circuits and Programs to the strawberry-fields toolkit from Xanadu. The [API documentation](https://hqsquantumsimulations.github.io/qoqo-strawberry-fields/generated/qoqo_strawberry_fields.html) is available for this project.
 
 This project is supported by [PhoQuant](https://www.quantentechnologien.de/forschung/foerderung/quantencomputer-demonstrationsaufbauten/phoquant.html).
 
