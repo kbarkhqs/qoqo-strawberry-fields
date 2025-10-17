@@ -2,6 +2,10 @@
 
 This changelog track changes to the qoqo-strawberry-fields project starting at version 0.2.0
 
+## Unreleased
+
+* Updated minimum Python version to 3.10.
+
 ## 0.3.1
 
 * Updated dependencies (minimum version adjusted).
